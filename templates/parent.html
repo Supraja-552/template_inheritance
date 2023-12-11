@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>parent</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+   
+    <h1>This is second line of parent html page</h1>
+    {% block body_block %}
+    <h1 class="btn btn-primary"> This is fourth line of  parent html</h1>
+    <h1>This is first line of parent html page</h1>
+    {% endblock %}
+    
+    <h1>This is third line of parent html page</h1>
+    <script src="{% static 'js/mdb.es.min.js' %}" ></script>
+    
+</body>
+</html>
